@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iseseisev töö</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=paula.videvik.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -37,7 +38,21 @@
             <div class="done-list">Siia tuleb nimekiri tehtud ülesannetega</div>
             <div class="repo-link">Repo link</div>
             <div class="team-list">Tiimi nimed</div>
-            <div class="calculator">Kalkulaator</div>
+            <div class="calculator">
+                <h2>Pensionini jäämise kalkulaator</h2>
+                <div class="sex">
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Mees</label>
+                    <br>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Naine</label>
+                </div>
+                <label for="age">Vanus täisaastates: <span id="age">(leia all slaideril enda vanus, vaikimisi on vanus
+                        50)</span></label>
+                <input id="range" type="range" name="age" min="1" max="100">
+                <button id="pension-btn">Arvuta</button>
+                <div id="result"></div>
+            </div>
         </div>
     </div>
 

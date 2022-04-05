@@ -57,3 +57,32 @@ justify-content: space-evenly;
 .container {
 padding: 3%;
 }
+
+/* calculator */
+
+.calculator {
+display: flex;
+flex-direction: column;
+}
+
+.sex {
+flex-direction: row;
+margin-bottom: 15px;
+}
+
+#range {
+width: 25%;
+margin-top: 10px;
+}
+
+#pension-btn {
+height: 30px;
+width: 70px;
+font-weight: 600;
+border-radius: 5px;
+margin-top: 15px;
+}
+
+#result {
+margin-top: 15px;
+}
