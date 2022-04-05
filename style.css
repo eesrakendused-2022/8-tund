@@ -1,0 +1,19 @@
+#nextpage{
+    justify-content: flex-end;
+    position: relative;
+}
+#body{
+    font-size: 5px;
+}
+.hh1{
+    font-style:oblique;
+    font: size 50px; ;
+    display: flex;
+    justify-content: center;
+}
+.hh3{
+    font-style:oblique;
+    font: size 50px; ;
+    display: flex;
+    justify-content: center;
+}
