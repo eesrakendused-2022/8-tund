@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaleht</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script>
+    <script src="../links.js" defer></script>
+</head>
+<body>
+    <div id="title"><h1>Avaleht</h1></div>
+    <div id="authorInfo">
+        <p>Autor: Taavi Pahk</p>
+        <a id="github" href="https://github.com/taavippp/8-tund" target="blank">Github'i repositoorium</a>
+    </div>
+    <hr>
+    <div id="exercise">
+    <div id="done">
+        <p>Valmis on:</p>
+        <ul>
+            <li>Pensioni kalkulaator</li>
+            <li>Avaleht</li>
+            <li>Interaktiivne tiimileht Youtube'i videoga</li>
+            <li>Kontaktileht koos RegEx'iga</li>
+            <li>Google Maps kontaktilehel</li>
+            <li>Vist on kõik?</li>
+        </ul>
+    </div>
+    <div id="difficult">
+        <p>Raskust pakkus:</p>
+        <ul>
+            <li>Tiimilehel keydown'i kasutamine</li>
+            <li>Google embed asjad algul</li>
+            <li>JQuery kasutus</li>
+        </ul>
+    </div>
+    </div>
+    <hr>
+    <div id="pensionCalculator">
+        <h3>Pensioni kalkulaator</h3>
+        <input type="radio" name="gender" id="genderM" value="male">
+        <label for="gender_m">Mees</label><br>
+        <input type="radio" name="gender" id="genderF" value="female">
+        <label for="gender_f">Naine</label><br>
+        <input type="range" name="age" id="ageSlider" min="0" max="100" value="50"><br>
+        <div id="ageValue">Valitud vanus</div><br>
+        <button id="submit">Kontrolli</button><br>
+    </div>
+    <div id="pensionResult">Kalkulaatori tulemus tuleb siia..</div>
+</body>
+</html>
