@@ -1,5 +1,7 @@
 # 8-tund
-Iseseisev töö  Töö autorid: Kert Lillenberk, Siim Kriibi  Link: http://www.tlu.ee/~klillenb/08/index.html
+Iseseisev töö<br/>
+Töö autorid: Kert Lillenberk, Siim Kriibi<br/>
+Link: http://www.tlu.ee/~klillenb/08/index.html
 
 ## Avaleht:
 1. Sisaldab ülesande kirjeldus
