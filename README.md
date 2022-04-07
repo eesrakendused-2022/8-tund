@@ -19,5 +19,5 @@ Link: http://www.tlu.ee/~klillenb/08/index.html
 5. Kontaktandmed
 
 ## Kasutatud materjal:
-1. Tausta muutmine video mängimise hetkel: https://developers.google.com/youtube/iframe_api_reference
-2. Värviline taustapilt: https://codepen.io/nohoid/pen/eYXpNL
+Tausta muutmine video mängimise hetkel: https://developers.google.com/youtube/iframe_api_reference<br/>
+Värviline taustapilt: https://codepen.io/nohoid/pen/eYXpNL
