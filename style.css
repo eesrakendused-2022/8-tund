@@ -9,6 +9,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 line-height: 1.5em;
 }
 
+.container {
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-evenly;
+height: 100vh;
+padding: 0 20px;
+}
+
 /* navigation menu */
 
 nav {
@@ -32,7 +41,6 @@ list-style: none;
 }
 
 .nav-item {
-/* margin-top: 20px; */
 border: 2px solid aliceblue;
 border-radius: 5px;
 padding: 10px;
@@ -47,21 +55,26 @@ text-decoration: none;
 color: aliceblue;
 }
 
+/* Start page */
+
+#git-link {
+text-decoration: underline;
+color:rgba(8, 87, 87, 0.938);
+}
+
+.radio {
+max-width: 15px;
+max-height: 15px;
+}
+
 ul {
 margin: 0;
 padding: 0;
 justify-content: space-evenly;
 }
 
-/* containeri sisu */
-
-.container {
-display: flex;
-flex-direction: column;
-align-items:center;
-justify-content: space-evenly;
-height: 100vh;
-padding: 0 2%;
+hr {
+margin-top: 20px;
 }
 
 /* calculator */
@@ -81,7 +94,7 @@ width: 25%;
 margin-top: 10px;
 }
 
-#pension-btn {
+#pension-btn, #submit-btn {
 height: 30px;
 width: 70px;
 font-weight: 600;
@@ -174,6 +187,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+margin-top: 40px;
 background-color: rgba(9, 170, 170, 0.103);
 height: 400px;
 width: 750px;
@@ -183,8 +197,8 @@ border-radius: 20px;
 
 #portrait {
 width: 30%;
-height: 40%;
-border-radius: 100px;
+height: 35%;
+border-radius: 70px;
 }
 
 h3 {
@@ -194,3 +208,57 @@ margin-bottom: 10px;
 h4 {
 margin-top: 0;
 }
+
+/* Kontaktileht */
+
+.contact-page {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 100%;
+width: 1000px;
+justify-content: space-evenly;
+}
+
+form {
+padding-top: 30px;
+flex: 40%;
+}
+
+#form-title {
+margin-top: -50px;
+}
+
+input, textarea {
+width: 100%;
+}
+
+input {
+height: 30px;
+font-family: inherit;
+font-size: inherit;
+}
+
+#google-map {
+flex: 40%;
+max-width: 500px;
+max-height: 350px;
+padding: 76px;
+border: 0;
+}
+
+footer {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+position: fixed;
+padding-top: 20px;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color: rgb(62, 88, 90);
+color: white;
+}
+
+
