@@ -1,6 +1,7 @@
 # 8-tund
 Iseseisev töö
 Töö autorid: Kert Lillenberk, Siim Kriibi
+Link: http://www.tlu.ee/~kertlil/index.html
 
 ## Avaleht:
 1. Sisaldab ülesande kirjeldus
