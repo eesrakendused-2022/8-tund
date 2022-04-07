@@ -16,3 +16,7 @@ Töö autorid: Kert Lillenberk, Siim Kriibi
 3. Telefoninumber peab sisaldama riigi suunakoodi.
 4. Embedded google maps ühe fantastilise asukohaga :)
 5. Kontaktandmed
+
+## Kasutatud materjal:
+1. Tausta muutmine video mängimise hetkel: https://developers.google.com/youtube/iframe_api_reference
+2. Värviline taustapilt: https://codepen.io/nohoid/pen/eYXpNL
