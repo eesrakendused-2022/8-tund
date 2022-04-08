@@ -1,6 +1,8 @@
 # 8-tund
 Iseseisev töö
 
+# Lehekülg (TLÜ)
+http://www.tlu.ee/~taavippp/eesrakendused/8-tund/home/
 
 # Ülesanne: 
 Leidke endale tiim 2-4 liiget, võib ka üksi teha, kui kedagi ei leia. Tehke sellest repositooriumist fork ja laadige töö githubi üles. Võite leida erinevaid alternatiive, et kuidas koodi koos kirjutada, aga üks võimalus on installida VS Code'ile laiendus Live Share - https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
@@ -14,8 +16,8 @@ Looge oma tiimile veebileht, kus on vähemalt kolm lehte:
 
 
 ## Tiimileht:
-1. Tiimiliikmete slaider, mida sarnast (ei pea enda andmeid kasutama, aga kuskil lehel peavad tiimiliikmete nimed kajastuma): ![image](https://user-images.githubusercontent.com/46881542/114979479-9ad58e00-9e93-11eb-919e-23ff19cf9265.png)
-1. Embeded youtube'i video teile kõigile meeldivad muusikavideoga. 
+1. Tiimiliikmete slaider, midagi sarnast (ei pea enda andmeid kasutama, aga kuskil lehel peavad tiimiliikmete nimed kajastuma): ![image](https://user-images.githubusercontent.com/46881542/114979479-9ad58e00-9e93-11eb-919e-23ff19cf9265.png)
+1. Embeded youtube'i video teile kõigile meeldiva muusikavideoga. 
 
 
 ## Kontaktileht:
@@ -26,7 +28,7 @@ Looge oma tiimile veebileht, kus on vähemalt kolm lehte:
 
 ## Üldine
 1. Veebilehel peab olema menüü, mille abil navigeerida. 
-1. Lisapunktid, kui jõuate teha lehe normaalselt skaleeruvaks. 
+1. Lisapunktid, kui jõuate teha lehe normaalselt skaleeruvaks.
 
 Max punktid 10, koos lisadega 12.
 

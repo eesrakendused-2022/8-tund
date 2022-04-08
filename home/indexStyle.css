@@ -1,0 +1,71 @@
+#pensionCalculator, #pensionResult, #done, #difficult {
+    border: 2px solid gray;
+    border-radius: 5%;
+    margin: 1rem;
+    padding: .5rem;
+    width: fit-content;
+}
+
+#title, #links {
+    flex-direction: column;
+    text-align: center;
+} 
+
+#exercise { 
+    display: flex;
+    justify-content: space-around;
+}
+
+#done {
+    border: 5px double green;
+}
+
+#done:hover {
+    animation: done-glow .5s forwards;
+}
+
+@keyframes done-glow {
+    0%      {background:white;}
+    100%    {background:lightgreen;}
+}
+
+#difficult {
+    border: 5px double darkred;
+}
+
+#difficult:hover {
+    animation: difficult-glow .5s forwards;
+}
+
+@keyframes difficult-glow {
+    0%      {background:white;}
+    100%    {background:lightcoral;}
+}
+
+#pensionCalculator > * {
+    margin: auto;
+}
+
+#ageValue {
+    text-align: center;
+}
+
+#ageValue::before {
+    content: "Vanus: ";
+}
+
+#title, #authorInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a#github:hover {
+    animation: link-glow .5s forwards;
+}
+
+@keyframes link-glow {
+    0%      {box-shadow: 0px 0px 0px 0px;}    
+    100%     {box-shadow: 0px 0px 5px 5px;}
+}
