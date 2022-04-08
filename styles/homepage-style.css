@@ -1,0 +1,50 @@
+summary {
+    display: block;
+    cursor: pointer;
+    outline: 0;
+  }
+
+.first-level{
+    background-color: bisque;
+    border-style: solid;
+    border-bottom: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: .6rem;
+}
+.second-level{
+    background-color: beige;
+    border-style: solid;
+    border-bottom: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: .6rem;
+    margin-left: 2.5rem;
+}
+.list1{
+    margin-left: 5rem;
+	line-height: 1.5rem;
+}
+
+ .slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 1rem;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider::-moz-range-thumb {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: bisque;
+    cursor: pointer;
+}
+
+.teamMembers{
+	margin-left:2rem;
+}

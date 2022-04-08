@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.tlu.ee//themes/tlu/images/favicons/favicon-16x16.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>	
+    <script src="scripts/contact-script.js" defer></script>
+	<link rel="stylesheet" href="styles/style.css">
+    <title>Kontakt</title>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<ul class="menu-container">
+				<li><a href="index.html" target="_self">Avaleht</a></li>
+				<li><a href="team.html" target="_self">Meeskond</a></li>
+				<li><a href="contact.html" target="_self">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="content">
+			<!-- Kontaktvorm -->  
+			<h2>Kontaktvorm</h2>
+			<form action="#" id="commentForm" name="commentForm">
+				<div class="commentContainer">
+					<label for="fullName">Nimi:</label>
+					<input type="text" id="fullName" name="fullName" minlength="2">
+					<label for="phone">Telefon:</label>
+					<input type="tel" id="phone" name="phone">
+					<label for="email">E-posti aadress:</label>
+					<input type="email" id="email" name="email">
+					<label for="comment">Teade:</label>
+					<textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+				</div>
+				<div id="buttonContainer">
+					<button id="submitBtn" type="submit">Saadan</button>
+				</div>
+			</form> 
+			<!-- Lemmikkoht Eestis -->    
+			<h2>Urbukse järv Aegviidus</h2>
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2038.7955848109398!2d25.639934365503425!3d59.269564122855904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46931a34a0e548f7%3A0xe28841eca8607a33!2sUrbukse%20j%C3%A4rv!5e0!3m2!1set!2see!4v1649165933598!5m2!1set!2see" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			<!-- Kontaktandmed -->
+			<h2>Kontakt</h2>
+			<div class="kontaktiLoend">
+				<dl>
+					<dt>Telefon</dt>
+					<dd>+372 640 9101</dd>
+					<dt>Aadress</dt>
+					<dd>Narva mnt 25, 10120 Tallinn</dd>
+					<dt>E-posti aadress</dt>
+					<dd>tlu@tlu.ee</dd>
+				</dl>     
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div>TLÜ digitehnoloogiate instituut</div>
+	</footer>
+</body>
+</html>

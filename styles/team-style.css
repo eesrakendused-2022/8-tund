@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.big-img-container {
+	display: flex;
+	justify-content: center;
+	
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+    font-size: 3rem;
+    color: rgb(140, 176, 223);
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    color: rgb(140, 176, 223);
+}
+
+img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    border-color: lightsteelblue;
+    border-style: solid;
+}
+
+.team {
+    background-color: aliceblue;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    background-color: lightsteelblue;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+button:active{
+    transform: translateY(4px);
+}
