@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.tlu.ee//themes/tlu/images/favicons/favicon-16x16.png">
+    <script src="scripts/homepage-script.js" defer></script>
+	<link rel="stylesheet" href="styles/homepage-style.css">
+	<link rel="stylesheet" href="styles/style.css">
+    <title>Esileht</title>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html" target="_self">Avaleht</a></li>
+				<li><a href="team.html" target="_self">Meeskond</a></li>
+				<li><a href="contact.html" target="_self">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="content">
+			<div>
+				<h2>Ülesannete kirjeldus</h2>
+				<p>Ülesandeks oli koostada kolm lehte, mis on omavahel menüüga seotud. Esimene leht on avaleht, mis omab infot ülesannete kohta ja linki Githubi repositooriumisse. Teine leht sisaldab tiimiliikmete slaiderit ja Youtube'i videot. Kolmas leht sisaldab kontaktvormi.
+				</p>
+			</div>
+			<div>
+				<h2>Tehtud ülesanded</h2>
+				<ul style="list-style-type:none;">
+					 <li>
+						 <details>
+							 <summary class="first-level">Avaleht</summary>
+							 <details>
+								 <summary class="second-level">Tehtud ülesanded</summary>
+									<ul class="list1">
+										<li>Ülesande kirjelduse tegemine</li>
+										<li>Tehtud ülesannete vaade</li>
+										<li>Repositooriumi link</li>
+										<li>Tiimiliikmete nimkiri</li>
+										<li>Pensioniea kalkulaator</li>
+									</ul>
+							 </details>
+							 <details>
+								 <summary class="second-level">Probleemid</summary>
+								 <ul class="list1">
+									 <li>
+										Väike probleem oli radio check väärtuste saamisega, aga selle sai kiirelt lahendatud.
+									 </li>
+								 </ul>
+							 </details>
+						 </details>
+					</li>
+					<li>
+						<details>
+							<summary class="first-level">Tiimileht</summary>
+							<details>
+								<summary class="second-level">Tehtud ülesanded</summary>
+								<ul class="list1">
+									<li>Tiimiliikmete slaider (koos piltide ja nimedega)</li>
+									<li>Embedded YouTube'i video</li>
+								</ul>
+							</details>
+							<details>
+								<summary class="second-level">Probleemid</summary>
+								<ul class="list1">
+									<li>Piltide tsentreerimine</li>
+								</ul>
+							</details>
+						</details>
+				   </li>
+				   <li>
+					<details>
+						<summary class="first-level">Kontaktileht</summary>
+						<details>
+							<summary class="second-level">Tehtud ülesanded</summary>
+							<ul class="list1">
+								<li>Kontaktvorm</li>
+								<li>Kontaktvormi väärtuste kohalikku mällu salvestamine</li>
+								<li>Kontaktvormi väärtuste kontroll Jquery abil</li>
+								<li>Google'i kaart lemmikkohaga Eestis</li>
+								<li>Kontaktandmed</li>
+								<li>Skaleeruv kujundus</li>
+							</ul>
+						</details>
+						<details>
+							<summary class="second-level">Probleemid</summary>
+							<ul class="list1">
+								<li>Kõige rohkem tegemist nõudis Jquery kontrolli töölesaamine ja regexi seadistamine. Põhimõtteliselt sai paika, aga sisuliselt on nii e-post aadressi kui ka telefoninumbri kontrollimisel arutelukoht, milliste parameetrite järgi sisestatavat väärtust kontrollida.</li>
+								<li>Aega nõudis ka kujunduse loomine ja selle skaleeruma saamine.</li>
+							</ul>
+						</details>
+					</details>
+			   </li>
+					
+				 </ul> 
+			</div>
+			<div>
+				<h2>Githubi link</h2>
+				<p><a href="https://github.com/knyrr/8-tund">https://github.com/knyrr/8-tund</a></p>
+				<h2>Tiimi liikmed</h2>
+				<ul class="teamMembers">
+					<li>Taavi Kamarik</li>
+					<li>Raul Raudsepp</li>
+					<li>Martin Rünk</li>
+				</ul> 
+			</div>
+			<div>
+				<h2>Vanuse kalkulaator</h2>
+				<div>
+					<input type="radio" id="naine" name="sugu" value="naine" checked>
+					<label for="naine">Naine</label>
+				</div>
+				<div>
+					<input type="radio" id="mees" name="sugu" value="mees">
+					<label for="mees">Mees</label>
+				</div>
+				<div class="slidecontainer">
+					<input type="range" min="1" max="100" value="50" class="slider" id="ageSlider">
+					<br>
+					<label for="ageSlider" id="ageValue"></label>
+					<br>
+				</div>
+				<button onclick="calculate()" id="ageSubmit">Arvuta aastad</button>
+				<div>
+					<p id="finalValue"></p>
+				</div>
+			</div>
+
+
+		</section>
+	</main>
+	<footer>
+		<div>TLÜ digitehnoloogiate instituut</div>
+	</footer>
+</body>
+</html>
