@@ -1,9 +1,9 @@
-## 2. kodutöö
+# 2. kodutöö
 
 ## Meeskond
-Taavi Kamarik (avaleht)
-Raul Raudsepp (tiimileht)
-Martin Rünk (kontaktvorm)
+1. Taavi Kamarik (avaleht)
+2. Raul Raudsepp (tiimileht)
+3. Martin Rünk (kontaktileht)
 
 ## Aadress
 Meie leht asub aadressil https://www.tlu.ee/~rynk/08
