@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
+    <title>Kontaktileht</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="element1">
+            <h2>Meie veebileht</h2>
+        </div>
+        <div id="element2">
+            <a href="home_page.html">Avaleht</a>
+            <a href="team_page.html">Tiim</a>
+            <a href="contact_page.html">Kontakt</a>
+            </div>
+            </nav>
+    </header>
+    <div class="error">
+        <p>Palun täitke kõik kohustuslikud väljad ja salvestage uuesti:</p>
+        <ul>
+            <li>Nimi</li>
+            <li>Telefoni number</li>
+            <li>Email</li>
+            <li>Lisainfo</li>
+        </ul>
+    </div>
+
+    <div class="error2">
+        <p>Telefoninumber on valesti sisestatud.</p>
+    </div>
+
+    <div class="error3">
+       <p>Email on valesti sisestatud.</p>
+    </div>
+
+    <h1>Kontaktileht</h1>
+    <div id="contact_list">
+    <label for="Name">Nimi*</label>
+    <input type="text" name="Name" id="Name" class="Required">
+    <label for="Phonenr">Telefon*</label>
+    <input type="text" name="Phonenr" id="Phonenr" class="Required">
+    <label for="Email">E-posti aadress*</label>
+    <input type="email" name="Email" id="Email" class="Required">
+    <label for="Info">Lisainfo</label>
+    <textarea name="Info" id="Info" rows="5" cols="2" class="Required"></textarea>
+    <input type="button" id="m_save" class="m_save" value="Salvesta" onclick=validate()>
+    </div>
+   
+    
+    
+    <br>
+    <h2>Meie lemmikkoht Eestis</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8114.883985681323!2d24.734589347932154!3d59.43772770714945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929362679c3539%3A0x56e9b9445eb31dc5!2sVanalinn%2C%20Tallinn!5e0!3m2!1set!2see!4v1649271717824!5m2!1set!2see" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br>
+    <h2>Kontaktandmed</h2>
+    <div id="contacts">
+        <h4>Telefoninumber</h4>
+        <p>+372 675 3723</p>
+        <p> </p>
+        <h4>Aadress</h4>
+        <p>Pikk 134, Tallinn, Harjumaa</p>
+        <h4>E-mail</h4>
+        <p>kirjutameile@tlu.ee</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Avaleht</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="element1">
+            <h2>Meie veebileht</h2>
+        </div>
+        <div id="element2">
+            <a href="home_page.html">Avaleht</a>
+            <a href="team_page.html">Tiim</a>
+            <a href="contact_page.html">Kontakt</a>
+            </div>
+            </nav>
+    </header>
+
+    <div id="title"><h1>Avaleht</h1></div>
+    <div id="authorInfo">
+        <p>Autorid: Marleene Ristjan, Laura Aruksaar, Kristjan Tamm, Lisett-Marleen Tänav</p>
+        <a id="github" href="." target="blank">Github'i repositoorium</a>
+        
+    </div>
+
+    <hr>
+    <h3>Ülesande kirjeldus</h3>
+    <p>Looge oma tiimile veebileht, kus on vähemalt kolm lehte:</p>
+
+        <p>Avalehel ülesande kirjeldus, tehtud ülesannete list ja mis osutus ülesande tegemisel raskeks, link meie githubi repositooriumile, tiimiliikmete nimed ning 
+        lihtne kalkulaator, kus saab sisestada soo ja vanuse (slideri abil) ning väljundiks on see, mitu aastat pensionini on, kui inimene juba on pensionil, siis 
+        tuleb ka seda näidata. (Kalkulaatoris kasutage lihtsustatud andmeid, et naised jäävad pensionile 63 ja mehed 65 aastaselt.)</p>
+        <p>Tiimilehel tiimiliikmete slaider ja embeded youtube'i video teile kõigile meeldivad muusikavideoga.</p>
+        <p>Kontaktilehel vorm, kus on kohustuslikud väljad: nimi, telefon, email, lisainfo. Vorm ei pea infot kuskile saatma, aga jquery'ga peavad olema tehtud 
+        kontrollid, kas vormi väli on täidetud. Lisapunkt selle eest, kui on regex-iga kontrollitud ka telefoni ja emaili välja formaati.
+        Embeded google maps (Viitab teie lemmikkohale Eestis).
+        Kontaktandmed (fiktiivsed) - telefoninumber, aadress, e-mail.
+        
+        <p>Lisaks peab veebilehel olema menüü, mille abil navigeerida.
+        Lisapunktid, kui jõuate teha lehe normaalselt skaleeruvaks.
+        Max punktid 10, koos lisadega 12.</p>
+        
+        <p>Esitamistähtaeg 09.04.2022</p>
+    
+    <hr>
+    <div id="exercise">
+    <div id="done">
+        <h3>Tehtud on:</h3>
+        <ul>
+            <li>Avaleht</li>
+            <li>Pensioni kalkulaator</li>
+            <li>Tiimileht</li>
+            <li>Tiimiliikmete slider</li>
+            <li>Embeded youtube video</li>
+            <li>Kontaktileht</li>
+            <li>Kontaktvorm koos kontrollidega</li>
+            <li>Embeded Google maps'i kaart</li>
+            <li>Lehe navigatsioon</li>
+        </ul>
+    </div>
+    <div id="difficult">
+        <h3>Raskust pakkus:</h3>
+        <ul>
+            <li>Kontaktvormi kontroll</li>
+            <li>Video lisamine (et toimiks)</li>
+            <li>Slider</li>
+        </ul>
+    </div>
+    </div>
+    <hr>
+    <div id="pensionCalculator">
+        <h3>Pensioni kalkulaator</h3>
+        <div>
+            <input type="radio" id="Mees" name="sugu"  value="mees">
+            <label for="Mees">Mees</label><br>
+        </div>
+        <div>
+            <input type="radio" id="Naine" name="sugu"  value="naine">
+            <label for="Naine">Naine</label><br>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="ageSlider">
+            <br>
+            <label for="ageSlider" id="ageValue"></label>
+            <br>
+        </div>
+        <button onclick="calculate()" id="ageSubmit">Arvuta </button>
+        <div>
+            <hr>
+            <p id="finalValue"></p>
+            <hr>
+        </div>
+    </div>   
+    
+</body>
+</html>
