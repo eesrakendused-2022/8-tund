@@ -16,8 +16,8 @@ body{
     letter-spacing: 0.1em;
     padding: 2em;
     display: grid;
-    width: 40%;
-    height: 95%;
+    width: 60%;
+    height: 110%;
     background-color: rgba(112, 112, 112, 0.7);
     border-radius: 1em;
     justify-self: center;
@@ -40,7 +40,7 @@ body{
     border-radius: 0.2em;
     font-size: 1em;
     margin-bottom: 0.5em;
-    height: 18%;
+    height: 20%;
 }
 
 .message_text{
@@ -59,7 +59,7 @@ body{
 .sendBtn{
     justify-self: center;
     width: 15%;
-    height: 200%;
+    height: 100%;
 }
 label{
     margin-bottom: 0.3em;
@@ -103,12 +103,12 @@ canvas{
     left:0;
     height: inherit;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(0, 0, 0, 0.425);
 }
 a{
     transition: 500ms;
     text-decoration: none;
-    background-color: rgb(36, 35, 35);
+    background-color: rgba(36, 35, 35, 0.5);
     text-shadow: 2px 2px black;
     color: white;
     padding: 0.3em;
