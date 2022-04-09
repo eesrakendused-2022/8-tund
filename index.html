@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iseseisev töö</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="nav-menu">
+        <ul class="nav-buttons">
+            <li class="nav-item"><a class="nav-link" href=" "><span>Avaleht</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html"><span>Tiim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><span>Kontakt</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="start-page">
+            <div class="assignment-text">
+                <h2>Iseseisva töö lühikirjeldus</h2>
+                <p>Iseseisva töö ülesanne oli luua kolme leheküljega veebileht, kus <strong>Avaleht</strong> näitab
+                    tehtud ülesannete nimekirja, linki githubi repositooriumile ning tiimiliikmete nimesid. Lisaks peab
+                    avalehel olema lihtne kalkulaator pensionini jäänud aastate arvutamiseks.</p>
+                <p>Teine leht on <strong>Tiimileht</strong> liikmete andmetega ja lisatud youtube'i video tiimiliikmeid
+                    kõnetava muusikavideoga</p>
+                <p>Kolmas leht on <strong>Kontaktileht</strong>, kus on kontakteerumisvorm (nimi, telefon, email,
+                    lisainfo). Vormi väljad peavad olema jqueri'ga valideeritud. Hea oleks ka regex kontroll telefoni-
+                    ja emaili väljale. Lisaks on lehel google maps viitega lemmikkohale ja kontaktandmed.</p>
+            </div>
+            <div class="done-list">
+                <h2>Ülesannete nimekiri</h2>
+                <div class="task-container">
+                    <div class="section">
+                        <button class="task">Menüü loomine</button>
+                        <div class="task-description">
+                            <p>Ei olnud keeruline. Paigutamine, nupud keskel ja viisakate vahedega, võttis veidi aega.
+                            </p>
+                        </div>
+                        <button class="task odd">Avalehe struktuur</button>
+                        <div class="task-description">
+                            <p>Ei olnud keeruline.</p>
+                        </div>
+                        <button class="task">Ülesannete nimekiri</button>
+                        <div class="task-description">
+                            <p>Siin kasutasin w3schools näidet akordioni kohta, modifitseerisin seda veidi enda lehele
+                                sobivaks.</p>
+                        </div>
+                        <button class="task odd">Pensionile jäämise kalkulaator</button>
+                        <div class="task-description">
+                            <p>See oli avalehe keerukaim osa. Veidi oli nuputamist, kuidas saada vanuse slaideri numbrid
+                                muutmise ajal nähtavaks. Lisaks ka funktsioon, kus tuli kontrollida, et sugu oleks
+                                kindlasti valitud ja et vastus ei tekiks juhul, kui sugu ei ole valitud.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <button class="task">Tiimiliikme kaart</button>
+                        <div class="task-description">
+                            <p>Kõige ajamahukam. Miskipärast ei õnnestunud edasi-tagasi nuppudele külge saada eventListeneri ja peale poolt päeva
+                                üritamist lahendasin olukorra, pannes funktsiooni otse html'i kasutades onclick'i.</p>
+                        </div>
+                        <button class="task odd">Youtube video</button>
+                        <div class="task-description">
+                            <p>Iseenesest ei olnud midagi keerulist, peavalu tekitas, et enamust minu soovitud videotest
+                                ei olnud võimalik autoriõiguse tõttu <italic>embeddida</italic> (annab musta kasti
+                                kirjaga - Video ei ole saadaval, vaadake YouTube'st).</p>
+                        </div>
+                        <button class="task">Kontaktlehe kontaktivorm</button>
+                        <div class="task-description">
+                            <p>Aega läks vormi valideerimisel Regex kasutamisega, kuna ei ole Regexiga
+                                varem kokku puutunud. Keelasin lõpuks lihtsuse huvides telefoninumbril ära kõik tühikud
+                                ja muud märgid peale numbrite ning max pikkuseks sai 12 numbrimärki. E-posti
+                                valideerimine oli veelgi keerulisem, seal kasutasin veebist leitud vormi, mis tundus
+                                kõige paremini toimivat.</p>
+                        </div>
+                        <button class="task odd">Google-Map's lisamine</button>
+                        <div class="task-description">
+                            <p>See oli lihtne, veidi rohkem võttis aega õige paigutus lehele.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator">
+                <h2>Pensionile jäämise kalkulaator</h2>
+                <div class="sex">
+                    <input class="radio" type="radio" id="male" name="sex" value="male">
+                    <label for="male">Mees</label>
+                    <br>
+                    <input class="radio" type="radio" id="female" name="sex" value="female">
+                    <label for="female">Naine</label>
+                </div>
+                <label for="age">Vanus täisaastates: <span id="age">(leia all slaideril enda vanus, vaikimisi on vanus
+                        30)</span></label>
+                <div id="span-row">
+                    <input id="range" type="range" name="age" min="1" value="30" max="100"><span
+                        id="age-display"></span>
+                </div>
+                <button id="pension-btn">Arvuta</button>
+                <div id="result"></div>
+            </div>
+            <hr>
+            <div class="repo-link">Selle töö koodi leiad <a href="https://github.com/PaulaMerle/8-tund" id="git-link"
+                    target="_blank">vajutades siia.</a></div>
+            <div class="team-list">Autor: Merle Paula Videvik</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

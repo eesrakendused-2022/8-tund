@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iseseisev töö</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav-menu">
+        <ul class="nav-buttons">
+            <li class="nav-item"><a class="nav-link" href="index.html"><span>Avaleht</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html"><span>Tiim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><span>Kontakt</span></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="team-page">
+            <button class="slider-btn" id="previous" onclick="currentCard(-1)">&#10094;</button>
+                    <div class="member-card fade" id="betty">
+                        <img id="portrait" src="img/portree3.jpg" alt="Betty_pilt">
+                        <h3>Betty Davis</h3>
+                        <h4>Müügijuht</h4>
+                        <p>Vastutab meie müügitegevuse eest</p>
+                    </div>
+                    <div class="member-card fade" id="paula">
+                        <img id="portrait" src="img/portree1.jpg" alt="Paula_pilt">
+                        <h3>Merle Paula Videvik</h3>
+                        <h4>Arendaja</h4>
+                        <p>Vastutab selle veebilehe teostuse eest</p>
+                    </div>
+                    <div class="member-card fade" id="bruno">
+                        <img id="portrait" src="img/portree2.jpg" alt="Bruno_pilt">
+                        <h3>Bruno Mars</h3>
+                        <h4>Disainer</h4>
+                        <p>Paneb arendajale pähe mõtted, kuidas veebilehte kujundada</p>
+                    </div>
+                    <button class="slider-btn" id="forward" onclick="currentCard(1)">&#10095;</button>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fd0tUloMTVk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+</body>
+
+</html>
