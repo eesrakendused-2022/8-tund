@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="avalehtScript.js" defer></script>
+    <script src="menuuScript.js" defer></script>
+    <link rel="stylesheet" href="avalehtstyle.css">
+    <title>Avaleht</title>
+</head>
+<body>
+    <div id="menuuBoks">
+        <button id="avaleht">Avaleht</button>
+        <button id="tiimileht">Tiimileht</button>
+        <button id="kontakt">Kontaktileht</button>
+    </div>
+    <h1>Ülesande kirjeldus</h1>
+    <div id="kirjeldus">
+        <p>Ülesandeks pidime tegema 3 erinevat veebilehte</p>
+        <p>Raskeks osutus pensioni kalkulaatori tegemine, sest polnud jquery'ga piisavalt tuttav.</p>
+        <p>Slaideri tegemine osutus keerukaks ning selle asemel tegime number inputi.</p>
+        <p>Raskeks osutus ka css failide tegemine, sest nendega pidi palju tegelema, et saada õiged suurused ja asukohad.</p>
+        <p>Repositoorium: https://github.com/KarlP02/8-tund</p>
+        <p>Autorid: Karl Piiber, Kevin Rosenberg</p>
+    </div>
+    <h1>Pensioni kalkulaator</h1>
+    <div id="kalkulaator">
+        <label for="vanus">Sisestage vanus</label>
+        <br>
+        <input type="number" name="vanus" id="vanus" min="0" max="110">
+        <br>
+        <label for="sugu">Valige sugu</label>
+        <br>
+        <label for="mees">mees</label>
+        <input type="radio" name="sugu" id="mees" value="mees">
+        <br>
+        <label for="naine">naine</label>
+        <input type="radio" name="sugu" id="naine" value="naine">
+        <br>
+        <button class="arvuta">Arvuta</button>
+        <div class="vastus"></div>
+    </div>
+</body>
+</html>
