@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeStyle.css">
+    <script src="HomeWork.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Iseseisevtöö</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li id="menu"><a href="home.html">Avaleht</a></li>
+            <li id="menu"><a href="team.html">Tiim</a></li>
+            <li id="menu"><a href="contact.html">Kontakt</a></li>
+          </ul>
+    </div>
+
+    <div id="back1">
+        <div id="Tasks">
+            <h1>Ülesande kirjeldus</h1>
+            <h2>Luua veebileht, kus peale avalehe on olemas ka tiimi- ja kontaktileht </h2>
+        </div>
+        <div id="DoneTasks">   
+            <h1>Tehtud ülesanded</h1>
+            <h3>Avaleht</h3>
+            <p>Ülesande kirjeldus</p>
+            <p>Tehtud ülesannete kirjeldus</p>
+            <p>Raskused ülesannete täitmisel</p>
+            <p>Link githubi repositooriumile ning autori nimed</p>
+            <p>Pensionikalkulaator</p>
+
+            <h3>Tiimileht</h3>
+            <p>Tiimiliikmete slaider</p>
+            <p>Embeded youtube video</p>
+
+            <h3>Kontaktileht</h3>
+            <p>Vorm kohustuslike väljadega: nimi, telefon, email, lisainfo</p>
+            <p>Embeded google maps</p>
+            <p>Fikseeritud kontaktandmed</p> 
+
+            <h1>Rasked ülesanded</h1>
+            <p>Saada endale meeldival kujul nimekiri tehtud ülesannetest</p>
+            <p>Jquery kasutamine</p>
+            <p>Slideri pilid suuruse õigeks saamine</p>
+            <p>Vormi tööle saamine</p>
+        </div>
+
+
+            <div id="PenCalcontainer">
+                <h1>Pensionikalkulaator</h1>
+                <div id="slidercontainer">
+                    <input type="range" min="1" max="120" value="20" id="ageslider" />
+                    <p>Vanus: <span id="agevalue"></span></p>
+                </div>
+                <div id="gendercontainer">
+                    <p>Sugu:</p>
+                    <input type="radio" id="male" name="gender" value="male" checked="true" />
+                    <label for="male">Mees</label><br />
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Naine</label><br />
+                </div>
+                <span id="pension"></span>
+            </div>
+    </div>
+
+
+</body>
+<footer>
+    <p>Karolin Kriiska</p>
+
+    <p><a href="https://github.com/kkriiska/kodutoo1_Karolin_Kriiska" id="link">repo</a></p>
+</footer>
+</html>
