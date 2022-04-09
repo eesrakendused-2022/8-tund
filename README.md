@@ -30,3 +30,13 @@ Luua tiiimile veebileht, kolme lehega:
 Max punktid 10, koos lisadega 12.
 
 ##Avaleht
+![Screenshot (25)](https://user-images.githubusercontent.com/22071408/162568444-e1b11dc4-8507-4c30-9d29-dbd6d93c5391.png)
+![Screenshot (26)](https://user-images.githubusercontent.com/22071408/162568440-3b6b44b0-4264-4b9e-91d5-732ad4bc4c2a.png)
+
+##Tiimileht
+![Screenshot (28)](https://user-images.githubusercontent.com/22071408/162568441-50cf822a-419a-4902-9668-50fa66e74a24.png)
+
+##Kontyaktileht
+![Screenshot (29)](https://user-images.githubusercontent.com/22071408/162568442-4bc6fb7c-603c-4c80-8685-5eee7ee5266f.png)
+![Screenshot (30)](https://user-images.githubusercontent.com/22071408/162568443-597f7a96-72a2-44d4-9def-532662a8f0d8.png)
+
