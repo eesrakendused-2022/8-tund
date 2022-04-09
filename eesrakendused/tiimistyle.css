@@ -1,0 +1,66 @@
+p h2 {
+    text-align: center;
+}
+
+.tiim {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#marksona {
+    font-style: italic;
+    text-align: center;
+    width: 50vw;
+}
+
+#luhijutt {
+    margin-top: 20px;
+    width: 55vw;
+}
+
+#eelmineBtn, #jargmineBtn {
+    width: 200px;
+    height: 35px;
+}
+
+#eelmineBtn {
+    margin-right: 20px;
+}
+
+#navigationBox {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: grey;
+    border: 2px solid black;
+    width: 70vw;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#infoBox {
+    display: flex;
+    background-color: grey;
+    border: 2px solid black;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    margin-top: 6vh;
+    padding-bottom: 15px;
+}
+
+#liikmed {
+    text-align: center;
+}
+
+#videoFrame {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid black;
+    padding: 15px;
+    width: 80vh;
+    margin: auto;
+    margin-top: 10px;
+}

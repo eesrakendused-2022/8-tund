@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+#andmed, .kaart, #kontaktandmed {
+    background-color: grey;
+    border: 2px solid black;
+    padding: 5px;
+    margin: auto;
+    
+}
+
+#andmed {
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#andmed > button {
+    padding: 3px;
+    width: 125px;
+}
+
+.kaart {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 60vh;
+    margin: auto;
+}
+
+#kontaktandmed {
+    text-align: center;
+    width: 35vh;
+}

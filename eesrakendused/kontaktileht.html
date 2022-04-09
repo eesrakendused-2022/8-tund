@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="kontaktScript.js" defer></script>
+    <script src="menuuScript.js" defer></script>
+    <link rel="stylesheet" href="kontaktstyle.css">
+    <title>Kontaktileht</title>
+</head>
+<body>
+    <div id="menuuBoks">
+        <button id="avaleht">Avaleht</button>
+        <button id="tiimileht">Tiimileht</button>
+        <button id="kontakt">Kontaktileht</button>
+    </div>
+    <h1>Kontaktandmete sisestamine</h1>
+    <div id="andmed">
+        <label for="nimi">Nimi</label>
+        <br>
+        <input type="text" name="nimi" id="nimi">
+        <div id="nimiprob"></div>
+        <br>
+        <label for="telefon">Telefon</label>
+        <br>
+        <input type="tel" name="telefon" id="telefon">
+        <div id="telefonprob"></div>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email">
+        <div id="emailprob"></div>
+        <br>
+        <label for="lisainfo">Lisainfo</label>
+        <br>
+        <input type="text" name="lisainfo" id="lisainfo">
+        <div id="lisainfoprob"></div>
+        <br>
+        <button class="saada">Saada andmed</button>
+        <div class="vastus"></div>
+    </div>
+    <h1>Kaart</h1>
+    <div class="kaart">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16249.048846319709!2d24.756946710628284!3d59.39752509453263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294cb51e49c45%3A0x3729e6af12e5b251!2zw5xsZW1pc3RlIGrDpHJ2!5e0!3m2!1set!2see!4v1649508182474!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+    <h1>Kontaktandmed</h1>
+    <div id="kontaktandmed">
+        <p>Tel: 123456789</p>
+        <p>Aadress: Narva mnt 25, 10120 Tallinn</p>
+        <p>E-mail: programmeerija@sokid.com</p>
+    </div>
+</body>
+</html>
