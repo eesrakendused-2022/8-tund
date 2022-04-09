@@ -2,6 +2,7 @@
 $('#pension-btn').click(function () {
     let sex = $('input[type=radio][name=sex]:checked').val();
     let age = $('input[type=range][name=age]').val();
+    let timeTillPension = 0;
     let pensionAge = 63;
     if (sex == undefined) {
         alert('Vali sugu!');
@@ -10,8 +11,10 @@ $('#pension-btn').click(function () {
         pensionAge = 65;
     }
     if (sex === 'male' || sex === 'female') {
-        let timeTillPension = pensionAge - age;
-        $('#result').html('Sul on pensionini jäänud veel <strong>' + timeTillPension + '</strong> aastat!');
+        timeTillPension = pensionAge - age;
+        if (timeTillPension > 0) {
+            $('#result').html('Sul on pensionini jäänud veel <strong>' + timeTillPension + '</strong> aastat!');
+        } else { $('#result').html('Tegelikult peaksid juba pensionil olema...'); }
     }
 });
 
@@ -47,24 +50,25 @@ for (i = 0; i < task.length; i++) {
     });
 }
 
-// tiimiliikmete kaartide slaider
-window.onload = function () {
-    $('.slider-btn').click(toggleCard);
-    let sliderButton = document.getElementById('forward');
-    sliderButton.addEventListener('click', function () {
-        console.log('Klikiti');
-    });
-};
+// tiimiliikmete kaardid
+
+let cardIndex = 1;
+showCards(cardIndex);
 
 
-function toggleCard() {
-    if ($('#bruno').css('display', 'none')) {
-        $('#paula').css('display', 'none');
-        $('#bruno').css('display', 'flex');
-    } else {
-        $('#bruno').css('display', 'none');
-        $('#paula').css('display', 'flex');
+function currentCard(n) {
+    showCards(cardIndex += n);
+}
+
+function showCards(n) {
+    let i;
+    let cards = document.getElementsByClassName("member-card");
+    if (n > cards.length) { cardIndex = 1; }
+    if (n < 1) { cardIndex = cards.length; }
+    for (i = 0; i < cards.length; i++) {
+        cards[i].style.display = "none";
     }
+    cards[cardIndex - 1].style.display = "flex";
 }
 
 // FORM VALIDATIONS
