@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    
+    
+    <title>Kalkulator</title>
+</head>
+<body id="Background">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <a href="http://www.tlu.ee/~vlady/eesrakedus/09.04%20iseseisavtöö/Avaleht/Avaleht.html"><button class="btn">Avaleht</button></a>
+    <div class="dropdown">
+    <button class="btn" style="border-left:1px solid navy">
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://www.tlu.ee/~vlady/eesrakedus/09.04%20iseseisavtöö/Kotntaktileht/Kontaktileht.html">Kontaktileht</a>
+        <a href="http://www.tlu.ee/~vlady/eesrakedus/09.04%20iseseisavtöö/Tiimileht/Tiimileht.html">Tiimileht</a>
+        <a href="http://www.tlu.ee/~vlady/eesrakedus/09.04%20iseseisavtöö/Kalkulator/Kalkulator.html">Kalkulator</a>
+    </div>
+    </div>
+
+    <div id="calculator">
+        <p>Kui palju kuni pensiooni aega</p>
+        <input type="radio" name="gender" value="male" id="input-wrapper-1">Mees
+        <input type="radio" name="gender" value="female" id="input-wrapper-1">Naine
+        <br>
+        <input type="range" min="1" max="110" value="1" class="slider" id="ageRange">
+        <div id="age"></div>
+        <input type="button" value="Arvuta">
+        <div id="result"></div>
+    </div>    
+
+</body>
+</html>
