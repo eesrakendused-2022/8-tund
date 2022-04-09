@@ -2,6 +2,9 @@
 Iseseisev töö
 
 
+# Minu leht http://www.tlu.ee/~vlady/eesrakedus/09.04%20iseseisavtöö/Avaleht/Avaleht.html
+
+
 # Ülesanne: 
 Leidke endale tiim 2-4 liiget, võib ka üksi teha, kui kedagi ei leia. Tehke sellest repositooriumist fork ja laadige töö githubi üles. Võite leida erinevaid alternatiive, et kuidas koodi koos kirjutada, aga üks võimalus on installida VS Code'ile laiendus Live Share - https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 
