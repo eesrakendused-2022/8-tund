@@ -94,6 +94,22 @@ width: 25%;
 margin-top: 10px;
 }
 
+#age-display {
+font-weight: 500;
+width: 20px;
+height: 20px;
+border-radius: 50px;
+padding: 7px;
+background-color: lightgrey;
+margin-left: 10px;
+}
+
+#span-row {
+display: flex;
+flex-direction: row;
+align-items: end;
+}
+
 #pension-btn, #submit-btn {
 height: 30px;
 width: 70px;
@@ -231,12 +247,22 @@ margin-top: -50px;
 
 input, textarea {
 width: 100%;
+font-family: inherit;
+font-size: inherit;
 }
 
 input {
 height: 30px;
-font-family: inherit;
-font-size: inherit;
+}
+
+#submit-btn {
+cursor: pointer;
+}
+
+#success-message {
+font-size: large;
+font-weight: 700;
+color: green;
 }
 
 #google-map {

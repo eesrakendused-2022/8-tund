@@ -73,11 +73,15 @@
                         </div>
                         <button class="task">Kontaktlehe kontaktivorm</button>
                         <div class="task-description">
-                            <p>Selgitus</p>
+                            <p>Aega läks vormi valideerimisel Regex kasutamisega, kuna ei ole Regexiga
+                                varem kokku puutunud. Keelasin lõpuks lihtsuse huvides telefoninumbril ära kõik tühikud
+                                ja muud märgid peale numbrite ning max pikkuseks sai 12 numbrimärki. E-posti
+                                valideerimine oli veelgi keerulisem, seal kasutasin veebist leitud vormi, mis tundus
+                                kõige paremini toimivat.</p>
                         </div>
-                        <button class="task odd">Lisa ülesanne</button>
+                        <button class="task odd">Google-Map's lisamine</button>
                         <div class="task-description">
-                            <p>Selgitus</p>
+                            <p>See oli lihtne, veidi rohkem võttis aega õige paigutus lehele.</p>
                         </div>
                     </div>
                 </div>
@@ -92,14 +96,17 @@
                     <label for="female">Naine</label>
                 </div>
                 <label for="age">Vanus täisaastates: <span id="age">(leia all slaideril enda vanus, vaikimisi on vanus
-                        50)</span></label>
-                <input id="range" type="range" name="age" min="1" max="100">
+                        30)</span></label>
+                <div id="span-row">
+                    <input id="range" type="range" name="age" min="1" value="30" max="100"><span
+                        id="age-display"></span>
+                </div>
                 <button id="pension-btn">Arvuta</button>
                 <div id="result"></div>
             </div>
             <hr>
-            <div class="repo-link">Selle töö koodi leiad <a href="https://github.com/PaulaMerle/8-tund"
-                    id="git-link">vajutades siia.</a></div>
+            <div class="repo-link">Selle töö koodi leiad <a href="https://github.com/PaulaMerle/8-tund" id="git-link"
+                    target="_blank">vajutades siia.</a></div>
             <div class="team-list">Autor: Merle Paula Videvik</div>
         </div>
     </div>
