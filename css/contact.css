@@ -1,0 +1,88 @@
+.form-container {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.contact-form {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1rem;
+
+}
+
+
+.contact-form input,
+textarea {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.error {
+    border-color: red;
+}
+
+.alert {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error-alert {
+    background-color: rgba(237, 160, 160, 0.655);
+}
+
+.form-alert {
+    background-color: rgba(112, 179, 243, 0.564);
+}
+
+
+
+.btn-submit {
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.map-container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info-container {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+
+.google-map {
+    aspect-ratio: 16 / 9;
+    height: 80%;
+    width: 80%;
+    border: none;
+}

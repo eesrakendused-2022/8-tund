@@ -1,0 +1,32 @@
+.gender-selection-container {
+    margin: 1rem 0rem 2rem;
+}
+
+.age-slider {
+    width: 50%;
+}
+
+select {
+    padding: 2px;
+}
+
+.calculator-container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.result-container {
+    margin-top: 2rem;
+}
+
+#calculation-result {
+    padding-top: 2rem;
+}
+
+.main-page-text {
+    margin: 5rem 0 10rem;
+}

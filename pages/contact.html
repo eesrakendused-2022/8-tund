@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/contact.js" defer></script>
+    <title>Kontaktileht</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../index.html">Avaleht</a></li>
+            <li><a href="team.html">Tiimileht</a></li>
+            <li><a href="contact.html">Kontaktileht</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1>Kontaktvorm</h1>
+            <form class="contact-form" id="contact-form">
+                <label for="name">Nimi</label>
+                <input type="text" name="name" id="name">
+                <label for="phone">Telefon</label>
+                <span class="alert error-alert hidden" id="phone-alert">Vale telefoni formaat</span>
+                <input type="tel" name="phone" id="phone">
+                <label for="email">E-post</label>
+                <span class="alert error-alert hidden" id="email-alert">Vale e-posti formaat</span>
+                <input type="email" name="email" id="email">
+                <label for="additional-text">Lisainfo</label>
+                <textarea name="additional-text" id="additional-text" rows="4" cols="30"></textarea>
+                <span class="alert form-alert" id="alert">Kõik väljad tuleb täita</span>
+                <button type="submit" class="btn-submit" id="btn-submit">Saada</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <h2>Kaart</h2>
+            <iframe class="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64418.9307548418!2d26.66250554562343!3d58.37502295031139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d55d3df7%3A0x400b36d18fc6d10!2sTartu!5e1!3m2!1sen!2see!4v1649448426764!5m2!1sen!2see"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info-container">
+            <h2>Kontaktid</h2>
+            <div class="contact-info">
+                <p><b>Telefon:</b> 12345678</p>
+                <p><b>Aadress:</b> Narva mnt 25, Tallinn</p>
+                <p><b>Email:</b> user@gmail.com</p>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Filipp-Artur Pljassunov</p>
+    </footer>
+</body>
+
+</html>
