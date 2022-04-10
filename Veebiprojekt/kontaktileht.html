@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="kontaktileht.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Kontaktileht</title>
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li>
+                <a href="avaleht.html">Avaleht</a>
+            </li>
+            <li>
+                <a href="tiimileht.html">Tiimileht</a>
+            </li>
+            <li>
+                <a href="kontaktileht.html">Kontaktileht</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--vorm-->
+    <div class="error">
+        Please fill in all required field and submit the form again:
+        <ul>
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>Email</li>
+            <li>Phone</li>
+        </ul>
+    </div>
+
+    <section>
+        <form action="" method="get" accept-charset="utf-8" id="contact">
+            <div class="form" id="form">
+                <label for="name">Nimi</label>
+                <input class="input1" type="text" name="name" id="name">
+                <div>
+                    <label for="phone">Telefon</label>
+                    <input class="input2" type="number" name="phone" id="phone">
+                    <span></span>
+                </div>
+                <div>
+                    <label for="email">E-post</label>
+                    <input class="input3" type="email" name="email" id="email">
+                    <span></span>
+                    <br>
+                </div>
+                <label for="info">Lisainfo</label>
+                <input class="input4" type="text" name="info" id="info">
+                <br>
+                <button class="submit" type="submit" id="save"value="Continue &rarr;">salvesta</button>
+            </div>
+        </form>
+    </section>
+
+    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8165.289719412587!2d24.196036!3d59.2273404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x983853ae7882a969!2sRUMMU%20Quarry%20%7C%20Prison!5e0!3m2!1sen!2see!4v1649266800034!5m2!1sen!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer><p>Peeter Oja <br>
+        Peeter@Oja.com <br>5661 5703</p>
+    </footer>
+</body>
+</html>

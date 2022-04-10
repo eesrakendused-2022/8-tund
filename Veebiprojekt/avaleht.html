@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="avaleht.js" defer></script>
+    <title>Avaleht</title>
+</head>
+<body>
+    <!-- The navigation bar -->
+    <nav>
+        <ul class="links">
+            <li>
+                <a href="avaleht.html">Avaleht</a>
+            </li>
+            <li>
+                <a href="tiimileht.html">Tiimileht</a>
+            </li>
+            <li>
+                <a href="kontaktileht.html">Kontaktileht</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- The calculator -->
+    <div class="calculator" id="calculator">
+        <p>Arvuta, kui palju aega <br> on pensionini jäänud</p>
+        <div class="gender">
+            <input type="radio" name="gender" id="male" value="Mees">Mees</input>
+            <input type="radio" name="gender" id="female" value="Naine">Naine</input>
+        </div>
+        <div class="birthyear">
+            <input type="range" min="0" max="100" value="0" id="range" class="slider2">
+            <p>Vanus: <span id="value"></span></p>
+        </div>
+        <button class="button" onclick="getValues();">Arvuta</button>
+    </div>
+
+    <!-- The text -->
+    <div class="text">
+        <p>Lehe autorid: <br> Kairi Käpa ja Reydan Ramon Niineorg</p>
+        <p><a href="https://github.com/iriak2/8-tund" class="gitlink">Repositooriumi link</a></p>
+        <p>Ülesande kirjeldus:<br>Ülesandeks oli luua veebileht kolme lehega, kus igal lehel on oma nõuded</p>
+        <p>Tehtud ülesanded: <br> navigatsiooni-leht, pensioni ea kalkulaator, <br>lisainfo lehe loomise kohta ja nõutud lingid,<br> tiimiliikmete slaider, lisatud youtube'i video,<br> kohustuslike väljadega vorm, 
+            <br> vormi kontrollid jquery'ga,<br> lisatud google maps viitega Rummu Karjäärile, <br>fiktiivsed kontaktandmed, lehe kujundus</p>
+        <p>Ülesande tegemisel osutus raskeks:<br>piltide töötlemine <br> whitespace'i kaotamine<br> funktsioonide paikutamine lehel <br>input kastide joondamine<br>jquery kontroll</p>
+
+    </div>
+</body>
+</html>
