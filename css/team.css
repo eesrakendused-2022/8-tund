@@ -1,0 +1,54 @@
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.team-slider {
+    text-align: center;
+    border-radius: 15px;
+    height: 18rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.prev {
+    margin-top: 8rem;
+    float: left;
+    padding: 0.5rem;
+}
+
+.next {
+    margin-top: 8rem;
+    float: right;
+    padding: 0.5rem;
+}
+
+
+
+.video-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container iframe {
+    aspect-ratio: 16 / 9;
+    height: 80%;
+    width: 80%;
+}
+
+.member-description {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.slider-button-container {
+    max-width: 40rem;
+    margin: 0 auto;
+}

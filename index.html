@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <title>Avaleht</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Avaleht</a></li>
+            <li><a href="pages/team.html">Tiimileht</a></li>
+            <li><a href="pages/contact.html">Kontaktileht</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Avaleht</h1>
+        <div class="main-page-text">
+
+            <h3>Ülesanne:</h3>
+            <p>Luua veebilehe, kus on vähemalt kolm omavahel seoutud lehte: avaleht, tiimileht ja kontaktileht</p>
+            <span>Autor: Filipp-Artur Pljassunov - </span><a href="https://github.com/FilipsP/8-tund"
+                target="_blank">GitHub repositooriumi link</a>
+            <h3>Tehtud ülesanned:</h3>
+            <h4>Avaleht</h4>
+            <ul>
+                <li>Kirjeldus</li>
+                <li>Tehtud ülesannete list</li>
+                <li>Repositooriumi link</li>
+            </ul>
+            <h4>Tiimileht</h4>
+            <ul>
+                <li>Tiimiliikmete slaider (fiktiivse andmetega)</li>
+                <li>Embed video</li>
+            </ul>
+            <h4>Kontaktileht</h4>
+            <ul>
+                <li>Kontaktvorm</li>
+                <li>Embed kaart</li>
+                <li>Kontaktid (fiktiivsed)</li>
+            </ul>
+            <p>Raskusi tekitas algusel andmete valideerimise script</p>
+        </div>
+
+        <div class="calculator-container">
+            <h2>Pensionialkulaator</h2>
+            <div class="gender-selection-container">
+                <p>Sugu:</p>
+                <select name="gender-select" id="gender-select">
+                    <option value="male">Mees</option>
+                    <option value="female">Naine</option>
+                </select>
+            </div>
+
+            <div class="age-selection-container">
+                <p>Vanus:</p>
+                <div class="slider-container">
+                    <span>1</span>
+                    <input type="range" id="age-slider" min="1" max="100" class="age-slider" id="age-slider">
+                    <span>100</span>
+                    <p id="show-age"></p>
+                    <div class="result-container">
+                        <button id="calculate">Kalkuleeri</button>
+                        <div id="calculation-result"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Filipp-Artur Pljassunov</p>
+    </footer>
+</body>
+
+</html>
