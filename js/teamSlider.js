@@ -1,26 +1,37 @@
-$(".prev").click(switchCard);
-$(".next").click(switchCard);
+let cardIndex = 0;
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+showCards(cardIndex);
 
-function switchCard() {
-    let currentCard = $(".active");
-    let nextCard = currentCard.next();
-    if (nextCard.length == 0) {
-        nextCard = $(".member-card").first();
-    }
+prevBtn.addEventListener('click', function () {
+    n = -1;
+    plusCards(n);
+});
 
-    currentCard.removeClass("active");
-    currentCard.addClass("hidden");
-    nextCard.removeClass("hidden");
-    nextCard.addClass("active");
-    $(".next").click(function () {
-        $(".member-card").hide().fadeIn(200, "linear");
-    });
+nextBtn.addEventListener('click', function () {
+    n = 1;
+    plusCards(n);
+});
+
+function plusCards(n) {
+    showCards(cardIndex += n);
 }
 
-$(document).keydown(buttonPress);
+function currentCard(n) {
+    showCards(cardIndex = n);
+}
 
-function buttonPress(e) {
-    if (e.keyCode === 37 || e.keyCode === 39) {
-        switchCard();
+function showCards(n) {
+    let i;
+    let cards = document.getElementsByClassName('member-card');
+    if (n > cards.length) {
+        cardIndex = 1;
     }
+    if (n < 1) {
+        cardIndex = cards.length;
+    }
+    for (i = 0; i < cards.length; i++) {
+        cards[i].style.display = 'none';
+    }
+    cards[cardIndex - 1].style.display = 'block';
 }
