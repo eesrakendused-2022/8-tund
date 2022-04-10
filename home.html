@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="home.js" defer></script>
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <h1 style="text-align:center">Avaleht</h1>
+    <div class="next">
+        <a href="http://greeny.cs.tlu.ee/~hennap/EesArendamine/8-tund/TeamPage.html" id="tiimileht">Tiimileht</a>
+        <a href="http://greeny.cs.tlu.ee/~hennap/EesArendamine/8-tund/kontaktileht.html" id="Kontaktileht">Kontaktileht</a>
+    </div>
+    <div id="container">
+        <div id="description">
+            <h2>Ülesande kirjeldus</h2><br>
+            <p>Leidke endale tiim 2-4 liiget, võib ka üksi teha, kui kedagi ei leia.<br><br>
+            Looge oma tiimile veebileht, kus on vähemalt kolm lehte: avaleht, tiimileht ja kontaktileht.<br><br>
+            <h2>Raskused</h2><br>
+            <ul>
+                <li>Jqueryga tühjade väljade kontrollimine</li><br>
+                <li>Tiimilehel ei saanud slideriga hakkama, kuigi proovisime mitut erinevat varianti</li><br>
+                <li>Avalehe kalkulaator tekitas samuti peavalu, aga sellega saime hakkama</li><br>
+                <li>Vormistamine, et sobiks erinevatele ekraanidele</li><br>
+            </ul>
+            </p>
+        </div>
+        <div id="done">
+            <h2>Tehtud ülesanded</h2><br>
+            <ul>
+                <li>Avaleht</li>
+                <li>Tiimileht</li>
+                <li>Kontaktileht</li>
+            </ul>
+        </div>
+        <div id="team">
+            <h2>Tiimi liikmed</h2><br>
+            <ul>
+            <li>Lika Berisvili</li>
+            <li>Henry Naptal</li>
+            <li>Morten-Paul Mühlberg</li>
+            <li>Taavet Tenso</li>
+            </ul>
+            <br>
+            <a href="https://github.com/henrynaptal/8-tund" target="_blank">GitHub'i repositoorium</a>
+        </div>
+    </div>
+    <div id="calculator">
+        <h3>Pensioni kalkulaator</h3><br>
+        <input type="Radio" Name="Gender" Value="Mees">Mees
+        <input type="Radio" Name="Gender" Value="Naine">Naine
+        <br>
+        0<input type="Range" Name="Age" id="Slider" min="1" max="100" value="50">100<br>
+        <div id="AgeValue"></div><br>
+        <button id="btn">Kalkuleeri</button><br>
+    </div>
+    <div id="pensionResult"></div>
+</body>
+</html>
