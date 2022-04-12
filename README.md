@@ -1,5 +1,7 @@
 # 8-tund
 Iseseisev töö
+Link lehele:
+http://www.tlu.ee/~ervin9/8_tund_iseseisevtoo/leht.html
 
 
 # Ülesanne: 
