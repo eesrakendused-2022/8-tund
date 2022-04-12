@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktileht</title>
+	 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/form.js" defer></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body id="body">
+<nav>
+		<div id="nav-container" >
+			<div id="nav-buttons">
+				<ul>					
+						<a href="leht.html">Avaleht</a>
+						
+						<a href="tiimi_leht.html">Tiimileht</a>
+				</ul>
+			</div>
+		</div>			
+	</nav>
+	<section class="content">
+    <div class="Kontaktileht">
+        <h1>Kontaktileht</h1>
+		<div id="content">
+			<h3>Kontaktivorm</h3>
+			<div id="input">
+				<label for="name">Nimi: </label>
+				<input type="text" name="name" id="name" placeholder="Eesnimi Perekonnanimi" required>
+				<div id="namecont"></div>
+				<br>
+				<label for="mobile">Telefon: </label>
+				<input type="tel" name="mobile" id="mobile" placeholder="+372..." required>
+				<div id="mobilecont"></div>
+				<br>
+				<label for="email">E-post: </label>
+				<input type="email" name="email" id="email" placeholder="mail@laim.ee" required>
+				<div id="emailcont"></div>
+				<br>
+				<label for="info">Lisainfo: </label>
+				<textarea name="info" id="info" cols="20" rows="5" placeholder="Tekst..." required></textarea>
+				<div id="infocont"></div>
+				<br>
+				<input type="button" value="Saada" id="submit">
+				<div class="vastus"></div>
+			</div>
+			<br>
+				<br>
+				<div id="data">
+					<h3>Kontaktandmed</h3>
+					<p>Telefoninumber: +372 24736555</p>
+					<p>Aadress: Paldiski mnt 52-6, 10617 Tallinn</a></p>
+					<p>E-post: salam@aleikum.ee</p>
+				</div>
+				<div id="google">
+				<h3> Sooviksin enda lemmikust kohast juba välja saada!!!</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.2036140394712!2d24.700053816076352!3d59.42967858169408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294628b3071cd%3A0xfab85ad7d69ffc6e!2sP%C3%B5hja-Eesti%20Regionaalhaigla%20Seewaldi%20ps%C3%BChhiaatriapolikliinik!5e0!3m2!1set!2see!4v1649705736875!5m2!1set!2see" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>
+    </div>
+	</section>
+</body>
+</html>

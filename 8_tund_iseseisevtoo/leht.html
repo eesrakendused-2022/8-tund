@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaleht</title>
+	 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/pension.js" defer></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body id="body">
+<nav>
+		<div id="nav-container" >
+			<div id="nav-buttons">
+				<ul>
+						<a href="tiimi_leht.html">Tiimileht</a>					
+						<a href="kontakt_leht.html">Kontaktileht</a>
+				</ul>
+			</div>
+		</div>			
+	</nav>
+	<section class="content">
+    <div class="Avaleht">
+        <h1>Avaleht</h1>
+		<h3>Ülesande kirjeldus:</h3>
+		<p>Peab leidma endale tiimi. Tiimile tuleb luua veebileht, kus<br> on vähemalt kolm lehte:Avaleht, Tiimileht ja Kontaktileht.<br> Töö tuleb laadida ülesse githubi.</p>
+		</div>
+		<h3>Ülesannete list:</h3>
+            <ul> 
+                <li>Navigeerimismenüü</li>
+                <li>Pensioni kalkulaator</li>
+				<li>Tiimilehe slaider</li>
+                <li>Youtube video</li>
+                <li>Kontaktivorm</li>
+                <li>Google maps</li>
+            </ul>
+            <h3>Raskeks osutus:</h3>
+            <ul>
+                <li>Tiimilehe slaideri tegemine</li>
+                <li>Kontaktvormi tegemine</li>
+            </ul>
+            <br>
+	<div class="nimi">
+	<h3>Link ja tiim</h3>
+	<p>Tiim: Ervin Puust</p>
+	<p><a href="https://github.com/Ervpst/8-tund">Githubi repositoorium</a></p>
+	 <h3>Kalkulaator</h3>
+            <p>Pensioni kalkulaator, mis küsib vanust ja sugu<br> ja peale seda arvutab mitme aasta pärast sul on pension.
+            </p>
+            <div id="input-wrapper">
+                <input type="radio" name="gender" value="male" id="input-wrapper-1">Mees
+                <input type="radio" name="gender" value="female" id="input-wrapper-1">Naine
+                <br>
+                <input type="range" min="1" max="130" value="1" class="slider" id="ageRange">
+                <div id="age"></div>
+                <input type="button" value="Arvuta">
+                <div id="result"></div>
+            </div>  
+	</div>
+	</section>
+</body>
+
+</html>
