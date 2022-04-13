@@ -13,3 +13,7 @@
 * HTML-i struktuur
 * CSS syles
 * aasta input välja kontroll, ehk min väärtus aasta praegu miinus 110 ning max väärtuseks on praegune aasta.
+
+### v1.1
+* Parandatud aasta inputi kontroll
+* Tehtud pensiooni kalkulaator
