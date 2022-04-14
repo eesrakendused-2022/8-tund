@@ -20,4 +20,4 @@
 * Parandatud aasta inputi kontroll
 * Tehtud pensiooni kalkulaator
 * Lisatud iseseisva töö kirjeldus
-* Lisatud iseseisvatööga 
+* Lisatud iseseisvatöö probleemid
