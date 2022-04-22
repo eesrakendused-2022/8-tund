@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="header.css">
+    <script src="kalkulaator.js"></script>
+    <title style="color:white">Avaleht</title>
+    <a style="background-image: url('bg.jpg')"></a>
+</head>
+<body>
+    <header>
+        <div id="nav_bar">
+            <a class="active" href="index.html">Avaleht</a>
+            <a href="team_info.html">Tiimileht</a>
+            <a href="contact_page.html">Kontaktileht</a>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">
+            <h3 style="color:white">Ülesande kirjeldus: </h3>
+            <p style="color: aquamarine;">Tuleb luua veebileht, kus on vähemalt kolm lehte: Avaleht, Tiimileht, Kontaktileht</p>
+            <p >Loodetavasti kõik toimib</p>
+            <br>
+            <h3 style="color:white">Ülesannete nimekiri</h3>
+            <ul> 
+                <li >Navigeerimismenüü</li>
+                <li >Pensioni kalkulaator</li>
+                <li >Videod</li>
+                <li >Kontaktivorm koos valideerimisega</li>
+                <li >Embedded google maps</li>
+            </ul>
+            <h3 style="color:white">Raskeks osutus:</h3>
+            <ul>
+                <li>Alguses juhendit lugedes tundus, et kogu töö</li>
+                <li>Aga Google aitab alati vist</li>
+                <li>Veidi rohkem pusimist oli ka kujundusega, sai katsetatud erinevaid asju lihtsalt</li>
+            </ul>
+            <br>
+            <h3 style="color:white">Pensioni kalkulaator</h3>
+            <p>Antud kalkulaator ütleb, mitu aastat on pensionini <br>
+                jäänud, arvestades inimese sugu ja hetkelist vanust.
+            </p>
+            <div id="input-wrapper">
+                <form>
+                    <input type="radio" name="gender" value="female" id="female" >Naine
+                    <input type="radio" name="gender" value="male" id="male" >Mees
+                    <br>
+                    <input id="age_range" type="range" min="0" max="125" oninput="age_amount.value=age_range.value">
+                    <input id="age_amount" type="text" value="0" min="0" max="125" oninput="age_range.value=age_amount.value" style="width: 25px;"><br>
+                    <input type="button" value="Arvuta" onclick="calculate()">
+                    <div id="result"></div>
+                </form> 
+            </div>            
+        </div>
+    </div>
+	<footer>
+		<h3><a href="https://github.com/kpodra/8-tund">Githubi repositoorium</a>| Autor: Kati Põdra, Ragnar Valdre</h3>
+	</footer>
+</body>
+</html>

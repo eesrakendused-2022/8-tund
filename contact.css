@@ -1,0 +1,35 @@
+html{
+    background-image: url('bg.jpg');
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    text-align: left;
+    background-image: url('bg.jpg');
+}
+
+.wrapper{
+    background-color: rgb(134, 199, 204);
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+
+#content {
+    text-align: left;
+    width: 35vh;
+    color: aquamarine;
+}
+
+.map{
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+    width: 60vh;
+    margin: auto;
+}

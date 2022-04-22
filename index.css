@@ -1,0 +1,41 @@
+
+html{
+    background-image: url('bg.jpg');
+    font-size: 16px;
+}
+
+body{
+    background-image: url('bg.jpg');
+    margin: 0;   
+}
+
+#container{
+    background-color: rgb(134, 199, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-around;
+    font-style: italic;
+    font-size: 15px;
+    
+}
+
+#content{
+    color: aquamarine;
+}
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 20px;
+    color: aquamarine;
+
+}
+
+#wrapper {
+    padding-left: 20px;
+    font-style: italic;
+}
+
