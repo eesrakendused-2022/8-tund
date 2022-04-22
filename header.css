@@ -1,0 +1,28 @@
+#nav_bar a{
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#nav_bar {
+    overflow: hidden;
+    background-color: rgb(30, 30, 30);
+}
+
+#nav_bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#nav_bar a:hover {
+    background-color: rgb(62, 106, 96);
+    color: black;
+}
+
+#nav_bar a.active {
+    background-color: #29ccf0;
+    color: rgb(40, 40, 40);
+}   
