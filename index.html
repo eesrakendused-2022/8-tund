@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iseseisev</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- <h2>Navigeerimine</h2>
+        <div>See veebileht on loodud Martin Lukas ja Artjom Morozovi poolt</div> -->
+        <!-- <a href="https://github.com/DrSkyrim/8-tund">Link GitHub repositooriumile</a><br>
+        <a href="about.html">Meist</a> -->
+    <!-- Menüü -->
+    <div id="menuContainer" class="movingParts">
+        <div class="menuButton" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Menüü</li>
+            <li><a href="index.html">Avaleht</a></li>
+            <li><a href="about.html">Tiimileht</a></li>
+            <li><a href="form.html">Kontaktivorm</a></li>
+            <li><a href="https://github.com/artjomfrost/8-tund">Link GitHub repositooriumile</a></li>
+        </ul>
+        </div>
+    </header>
+    <br>
+    <hr>
+    <section id="pensioncalc">
+        <h2>Pensiooni kalkulaator</h2>
+        <label for="birthday">Sisesta enda Sünniaasta</label>
+        <input type="number" name="birthYear" id="birthYear" max="2022" min="1930">
+        <br>
+        <label for="female">Naine</label>
+        <input type="radio" name="gender" id="female">
+        <label for="male">Mees</label>
+        <input type="radio" name="gender" id="male">
+        <br>
+        <input type="button" value="Kalkuleeri!" id="save">
+        <div id="pensionres">Siia tuleb kalkulaatorist vastus</div>
+    </section>
+    <hr>
+    <section>
+        <h2>Ülesanne kirjeldus</h2>
+        <div>Meie ülesandeks oli luua lihtne pensioonikalkulaator, tiimileht ja kontaktileht</div>
+    </section>
+    <section>
+        <h2>Raskusi ülesannetega</h2>
+        <div>Esimeses ülesanndes läks pikalt soo valimisega ja ka kalkulaatori tööle panemiseks. Paljudes kohtades oli probleemiks see, et autor kiirustas ja proovis mõned kohad ja muutujad välja jätte, kus seda teha ei tohtinud. Martin Lukas</div>
+        <br>
+        <div>jQuery valideerimisega läks aega, kuna alguses kasutasin jQuery validation pluginit ja ei saanud kuidagi teavitused eesti keelde. Kuna css'i olen kasutanud vähe, oli huvitav mängida. Probleemiks oli veel youtube populaarsete videote mitte töötamine (video unavailable), stackoverflow järgi on viga ainult live serverist, greenyst töötab. Seetõttu läks aega meeldiva video otsimisega. Artjom Morozov</div>
+
+    </section>
+    <script>
+        function openMenu(){
+            let movingParts = document.getElementsByClassName("movingParts");
+            for (let i = 0; i < movingParts.length; i++) {
+            movingParts[i].classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+</html>
