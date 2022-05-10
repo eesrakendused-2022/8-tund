@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="kontaktid.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+    <title>Kontakt</title>
+</head>
+<body>
+    <div id="info">
+        
+        <div id="buttons">
+            <form method="get" action="/~sten10/homework2/kodutoo_2.html">
+              <button type="submit">Avaleht</button>
+            </form>
+
+            <form method="get" action="/~sten10/homework2/tiimileht.html">
+                <button type="submit">Tiimileht</button>
+              </form>
+        </div>
+    </div>
+
+    <div id="main">
+        
+    </div>
+    <div id="mid-area">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129859.84645229852!2d24.688769327947966!3d59.43207217355179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929299229713fb%3A0x4552609da6d8393c!2sGrossi%20toidukaubad!5e0!3m2!1set!2see!4v1649606406197!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="contact-fields">
+        <label for="name">Eesnimi</label>
+        <input type="text" name="name" id="name" placeholder="Ülo" required>
+        <div id="nameError"></div>
+        <label for="surname">Perekonnanimi</label>
+        <input type="text" name="surname" id="surname" placeholder="Üloste" required>
+        <div id="surnameError"></div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"  size="30" placeholder="ulo.ulostereal@gmail.com" required>
+        <div id="emailError"></div>
+        <label for="phone">Telefoninumber</label>
+        <input type="tel" name="phone" id="phone" placeholder="+3726003000" required>
+        <div id="phoneError"></div>
+        <label for="additional-info">Lisainfo</label>
+        <textarea name="additional-info" id="additional-info" cols="40" rows="10" placeholder="Siin saad meile oma arvamust avaldada..." required></textarea>
+        <div id="infoError"></div>
+        <button id="submit">Jaga!</button>
+        <div id="submitConfirmation"></div>
+      </div>
+    </div>
+  </body>
+<footer>
+  <div class="bottom-info-2">
+    <p>Meie kontaktandmed:</p>
+    <p>tel: 600 3000</p>
+    <p>Email: ulo.ulostereal@gmail.com</p>
+    <p>Aadress: Kaluri tee 3, Haabneeme, 74001, Harjumaa</p>
+
+  </div>
+</footer>
+</html>

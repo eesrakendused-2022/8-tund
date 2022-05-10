@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pension.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+    <title>2. kodutöö</title>
+</head>
+<body>
+    <div id="info">
+        
+        <div id="buttons">
+            <form method="get" action="/~sten10/homework2/kontaktileht.html">
+              <button type="submit">Kontaktileht</button>
+            </form>
+
+            <form method="get" action="/~sten10/homework2/tiimileht.html">
+                <button type="submit">Tiimileht</button>
+              </form>
+        </div>
+    </div>
+
+    <div id="main">
+        <h1>Ülesanne</h1>
+        <p>Luua vähemalt 3 lehte:</p>
+        <ul>
+            <li>Avaleht</li>
+            <li>Tiimileht</li>
+            <li>Kontaktileht</li>
+        </ul>
+
+
+        <h2>Ülesanne 2</h2>
+        <details>
+            <summary>
+                Tehtud ülesannete list:
+            </summary>
+        <ul>
+            <li>Nupud teistele lehtedele</li>
+            <li>Pensionikalkulaator</li>
+            <li>Tiimiliikmete slaider</li>
+            <li>Embedded YouTube video</li>
+            <li>Kohustuslikud väljad</li>
+            <li>Embedded Google Maps</li>
+        </ul>
+    </details>
+
+    <h2>Ülesanne 3</h2>
+        <details>
+        <summary>Raskeks osutus:</summary>
+        <ul>
+            <li>Slaiderite töölesaamine</li>
+            <li>Kohustuslikud väljad</li>
+        </ul>
+
+    </details>
+
+    <h2>Pensionikalkulaator</h2>
+        <p>Sisestage oma sugu ja vanus, mispeale arvutame välja Teie pensionistaatuse.</p>
+        <div id="input-wrapper">
+            <input type="radio" name="gender" value="male" id="input-wrapper-1">Mees
+            <input type="radio" name="gender" value="female" id="input-wrapper-1">Naine
+            <br>
+            <input type="range" min="1" max="99" value="1" class="slider" id="ageRange">
+            <div id="age"></div>
+            <button id="pensionBtn">Arvuta</button>
+            <div id="result"></div>
+        </div> 
+    </div>
+
+
+
+    
+</body>
+
+<footer>
+    <div class="bottom_info">
+        <p>Tiim koosnes: Sten Muinast</p>
+        <a href="https://github.com/CrazyCaravanCamel/2-kodutoo">GitHub repositoorium</a>
+    </div>
+</footer>
