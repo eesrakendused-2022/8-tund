@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="form.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Kontaktileht</title>
+</head>
+<body>
+    <div id="menuContainer" class="movingParts">
+    <div class="menuButton" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <li>Menüü</li>
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="about.html">Tiimileht</a></li>
+        <li><a href="form.html">Kontaktivorm</a></li>
+        <li><a href="https://github.com/artjomfrost/8-tund">Link GitHub repositooriumile</a></li>
+    </ul>
+    </div>
+        <main>
+            <div class="formContainer">
+                <form id="contactForm" class="movingParts" method="get">
+                <fieldset>
+                <h1>Kontaktivorm</h1>
+                <label for="firstName">Nimi</label>
+                <input type="text" name="name" id="firstName" class="firstName">
+                <div class="dataCheck" id="nameCheck"></div>
+                <br>
+                <label for="phoneNumber"> Number</label>
+                <input type="text" name="phone" id="phoneNumber" class="phone">
+                <div class="dataCheck" id="phoneCheck"></div>
+                <br>
+                <label for="email">Meil</span></label>
+                <input type="text" name="email" id="email" class="email">
+                <div class="dataCheck" id="emailCheck"></div>
+                <br>
+                <label for="info">Info</label>
+                <textarea id="info" name="info" class="info"></textarea>
+                <div class="dataCheck"id="infoCheck"></div>
+                </p>
+                <p>
+                
+                <input type="submit" id="submit" value="Saada">
+                </fieldset>
+                </form>
+            </div>
+        <br>
+        <div id="mapContainer">
+            <div class="movingParts" id="embedMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2870.8535397697187!2d24.799918708261153!3d59.41639485218467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x4692eb610fbb18a5%3A0x50c3588b2554eaa7!2sTallinn%20Airport%2C%20Tartu%20maantee%20101%2C%2010112%20Tallinn!3m2!1d59.4161952!2d24.8004054!5e0!3m2!1sen!2see!4v1650265252697!5m2!1sen!2see" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </main>
+        <footer>
+            <div id="aboutContainer">
+                <h1>Kontaktandmed</h1>
+            <br>
+                <h2>Telefoninumber Aadress E-mail</h2>
+            <br>
+                <ul>
+                    <li>GSM: 5531548 FIX: 718236</li>
+                    <li>Sepise 7, Tallinn</li>
+                    <li>info@info.ee</li>
+                </ul>
+            </div>
+        </footer>
+    <script>
+        function openMenu(){
+            let movingParts = document.getElementsByClassName("movingParts");
+            for (let i = 0; i < movingParts.length; i++) {
+            movingParts[i].classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+</html>

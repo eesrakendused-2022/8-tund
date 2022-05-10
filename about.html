@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <script src="about.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menüü -->
+  <div id="menuContainer" class="movingParts">
+    <div class="menuButton" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <li>Menüü</li>
+        <li><a href="index.html">Avaleht</a></li>
+        <li><a href="about.html">Tiimileht</a></li>
+        <li><a href="form.html">Kontaktivorm</a></li>
+        <li><a href="https://github.com/artjomfrost/8-tund">Link GitHub repositooriumile</a></li>
+    </ul>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">Martin Lukas</div>
+          <div class="centre"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Oo8H5vUKMlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="IMG_4397.JPG" style="width:100%">
+          <div class="text">Artjom Morozov</div>
+          <div class="lorn">
+            <<iframe width="560" height="315" src="https://www.youtube.com/embed/h4YvkZeLrjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    <!-- Menüü script -->
+    <script>
+      function openMenu(){
+          let movingParts = document.getElementsByClassName("movingParts");
+          for (let i = 0; i < movingParts.length; i++) {
+          movingParts[i].classList.toggle('active');
+          }
+      }
+  </script>
+</body>
+</html>

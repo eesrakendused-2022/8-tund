@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {background: gray;}
+text {font-size: 15px; position: absolute;}
+
+.content {padding: 7rem 0;}
+
+#menuContainer {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: gray;
+    border-right: 4px solid yellow;
+    left: -250px;
+
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+#menuContainer.active {left: 0px;}
+#contactForm h1 {color: white; text-align: center;}
+
+#menuContainer ul li:first-child {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.95em;
+    padding: 25px 10px 10px 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#menuContainer ul li:not(:first-child) {
+    width: 90%;
+    margin-left: 10%;
+    list-style: none;
+    font-size: 1.1em;
+    padding: 15px 10px;
+    text-decoration: none;
+    
+}
+
+#menuContainer ul li a {
+    color: yellow;
+    text-decoration: none;
+    text-emphasis-style: bold;
+}
+
+#menuContainer ul li a:hover {color: white;}
+
+#menuContainer .menuButton {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: yellow;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#menuContainer .menuButton span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 4px 0;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#menuContainer .menuButton:hover {background: gray;}
+
+#menuContainer .menuButton:hover span {background: white;}
+
+#formContainer {
+    position: fixed;
+    border: none;
+    background-color: black;
+    padding: 20px;
+
+}
+
+#formContainer ul:first-child {font-size: 1.95em;}
+
+#contactForm {
+    padding-left: 220px;
+    padding-top: 50px;
+    display: inline-block;
+    border: yellow, 4px;
+
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+
+}
+
+#contactForm label {
+    color: white;
+}
+
+#aboutContainer ul li{
+    align-items:stretch ;
+    min-width: 1200px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+#embedMap {
+    padding-left: 220px;
+    
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+
+}
+
+#embedMap.active {padding-left: 360px;}
+#contactForm.active {padding-left: 360px;}
+
+#aboutContainer {
+    min-width: 1200px;
+    padding-left: 220px;
+    justify-content: center;
+}
+
+#aboutContainer ul li {
+    bottom: -50px;
+    position: relative;
+    display: inline;
+    margin-left: 100px;
+    
+}
+
+input, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.dataCheck {
+    background-color: yellow;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+input.info {height: 150px;}
+   
+#aboutContainer h1 {
+    padding-top: 20px;
+    padding-left: 240px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+#aboutContainer h2 {
+    color: white;
+    padding-top: 20px;
+    padding-left: 100px;
+    bottom: -40px;
+    position: relative;
+    word-spacing: 120px;
+}
+
+#aboutContainer li {
+    color: yellow;
+}
+
+input {border: none;}
+
+footer {min-width: 1200px;}
