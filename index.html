@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaleht</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Avaleht</h1>
+    <h3>Ülesanne kirjeldus</h3>
+    <p>Looge oma tiimile veebileht, kus on vähemalt kolm lehte.</p>
+    <p>Avaleht peab sisaldama ülesanne kirjeldust, tehtud ülesannete listi, raskusi ülesannega, link meie githubi repositooriumile ning tiimiliikmete nimed + lihtne kalkulaator.</p>
+    <h3>Tehtud ülesanded ja probleemid:</h3>
+    <p>Kõik mis oli vaja teha githubi kirjas on tehtud. Ainuke raskus oli videotega.</p>
+    <a href="https://github.com/kajalinn/8-tund">GitHub</a>
+    <p>Tiimiliikmed : <strong>Nikita Kajalin,</strong>
+     <strong>Andres Sikka,</strong> </p> <strong>Dmitri Shibin</strong></p>
+    <h4>Pensiooni kontroll</h4>
+    <div>
+        <label for="age">Valige vanus</label>
+        <input type="number" id="age">
+        <label for="gender">Valige sugu</label>
+        <select id="gender">
+            <option value="m" id="mees">Mees</option>
+            <option value="n" id="naine">Naine</option>
+        </select>
+        <input type="button" id="button" onclick="pensioniKalkulaator();" value="Kalkuleerima">
+    </div>
+    <div id="pensioniVastus"></div>
+    <h1><a href="page2.html" id="nextpage">Järgmine leht</a></h1>
+    <h1><a href="page3.html" id="nextpage">Kolmas leht</a></h1>
+</body>
+</html> 

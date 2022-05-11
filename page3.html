@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <title>Kontaktileht</title>
+</head>
+<body>
+    <h1 class="hh3">Kontaktileht</h1>
+    <h1><a href="page2.html" id="nextpage">Eelmine leht</a></h1>
+    <form id="kontaktVorm"> 
+        <table>
+            <tr>
+                <td><label for="nimi">Nimi: </label></td>
+                <td><input type="text" name="nimi" id="nimi" required></td>
+            </tr>
+            <tr>
+                <td><label for="pNimi">Perenimi: </label></td>
+                <td><input type="text" name="pNimi" id="pNimi" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefon">Telefon: </label></td>
+                <td><input type="text" name="telefon" id="telefon" required></td>
+            </tr>
+            <tr>
+                <td><label for="ePost">E-post: </label></td>
+                <td><input type="email" name="ePost" id="ePost" required></td>
+            </tr>
+            <tr>
+                <td><label for="lisaInfo">Lisainfo: </label></td>
+                <td><textarea name="lisaInfo" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="submit"></label></td>
+                <td><input type="submit" value="Saada andmed" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <h1>Kontaktid:</h1>
+    <p>+3726409101</p>
+    <p>Narva mnt 25, 10120 Tallinn</p>
+    <p>tlu@tlu.ee</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.662660506131!2d24.769441369385103!3d59.438700591771706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935c7ed21b5b%3A0x34ce7211e853036f!2z0KLQsNC70LvQuNC90L3RgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2see!4v1649515050883!5m2!1sru!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        $("#kontaktVorm").validate();
+    </script>
+</body>
+</html>
