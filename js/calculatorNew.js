@@ -1,10 +1,10 @@
 let enteredYear = 0;
 
-$("#age").html('<p>'+enteredYear+'</p>');
+$("#age").html('<p>'+enteredYear+' a.</p>');
 
 $("#years").click(function (){
     enteredYear = $("#years").val();
-    $("#age").html('<p>'+enteredYear+'</p>');
+    $("#age").html('<p>'+enteredYear+' a.</p>');
 });
 
 $("#radioContainer input").click(function (){
