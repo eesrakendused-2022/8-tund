@@ -2,7 +2,7 @@ let enteredYear = 0;
 
 $("#age").html('<p>'+enteredYear+' a.</p>');
 
-$("#years").click(function (){
+$("#years").change(function (){
     enteredYear = $("#years").val();
     $("#age").html('<p>'+enteredYear+' a.</p>');
 });
