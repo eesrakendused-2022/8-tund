@@ -1,7 +1,6 @@
 let enteredYear = 0;
 
 $("#age").html('<p>'+enteredYear+' a.</p>');
-
 $("#years").change(function (){
     enteredYear = $("#years").val();
     $("#age").html('<p>'+enteredYear+' a.</p>');
@@ -24,4 +23,3 @@ $("#btnInput").click(function (){
         $("#pensionResult").append(document.createTextNode(-enteredYear+65));
     }
 });
-
