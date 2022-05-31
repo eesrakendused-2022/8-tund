@@ -1,10 +1,9 @@
-let enteredYear = 0;
-
-$("#age").html('<p>'+enteredYear+' a.</p>');
-$("#years").change(function (){
-    enteredYear = $("#years").val();
-    $("#age").html('<p>'+enteredYear+' a.</p>');
+let age = $('input[type="range"]').on('input', () => {
+    $('#age').html('<p>'+age.val()+' a.</p>');
+    console.log(age.val())
 });
+
+$("#age").html('<p>0 a.</p>');
 
 $("#radioContainer input").click(function (){
     let currentGender = $("input.active");
