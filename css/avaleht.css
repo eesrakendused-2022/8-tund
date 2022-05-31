@@ -3,3 +3,8 @@ body::before {
     content: '';
     height: 60px;
 }
+body::after {
+    display: block;
+    content: '';
+    height: 120px;
+}
