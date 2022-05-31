@@ -1,7 +1,8 @@
-let age = $('input[type="range"]').on('input', () => {
+let age = 0;
+age = $('input[type="range"]').on('input', () => {
     $('#age').html('<p>'+age.val()+' a.</p>');
-    console.log(age.val())
 });
+
 
 $("#age").html('<p>0 a.</p>');
 
@@ -16,7 +17,7 @@ $("#btnInput").click(function (){
     let gender = $("#radioContainer input.active").attr("id");
     let aastad;
     if (gender == "woman") {
-        aastad = -enteredYear + 63;
+        aastad = -age.val()+63;
         console.log(aastad);
         if (aastad > 0 && aastad != 1) {
             $("#pensionResult").html("Pensioonini aega jäänud: ");
@@ -30,7 +31,7 @@ $("#btnInput").click(function (){
             $("#pensionResult").html("Teie olete juba pensionäär! :)");
         }
     }if (gender == "man"){
-        aastad = -enteredYear+65;
+        aastad = -age.val()+65;
         console.log(aastad);
         if (aastad > 0 && aastad != 1) {
             $("#pensionResult").html("Pensioonini aega jäänud: ");
