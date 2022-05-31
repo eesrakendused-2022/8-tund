@@ -8,3 +8,12 @@ body::after {
     content: '';
     height: 120px;
 }
+
+.nav-link{
+    text-decoration: none;
+    color: darkgray!important;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: white!important;
+}
