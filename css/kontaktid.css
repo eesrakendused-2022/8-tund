@@ -1,0 +1,15 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+body::after {
+    display: block;
+    content: '';
+    height: 120px;
+}
+
+.form-control{
+    margin-bottom: 2%;
+    text-align: center;
+}
