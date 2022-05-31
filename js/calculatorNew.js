@@ -15,11 +15,34 @@ $("#radioContainer input").click(function (){
 
 $("#btnInput").click(function (){
     let gender = $("#radioContainer input.active").attr("id");
-    if (gender == "woman"){
-        $("#pensionResult").html("Pensioonini aega jäänud: ");
-        $("#pensionResult").append(document.createTextNode(-enteredYear+63));
+    let aastad;
+    if (gender == "woman") {
+        aastad = -enteredYear + 63;
+        console.log(aastad);
+        if (aastad > 0 && aastad != 1) {
+            $("#pensionResult").html("Pensioonini aega jäänud: ");
+            $("#pensionResult").append(document.createTextNode(aastad));
+            $("#pensionResult").append(" aastad.");
+        }else if(aastad === 1){
+            $("#pensionResult").html("Pensioonini aega jäänud: ");
+            $("#pensionResult").append(document.createTextNode(aastad));
+            $("#pensionResult").append(" aasta.");
+        }else if (aastad<=0){
+            $("#pensionResult").html("Teie olete juba pensionäär! :)");
+        }
     }if (gender == "man"){
-        $("#pensionResult").html("Pensioonini aega jäänud: ");
-        $("#pensionResult").append(document.createTextNode(-enteredYear+65));
+        aastad = -enteredYear+65;
+        console.log(aastad);
+        if (aastad > 0 && aastad != 1) {
+            $("#pensionResult").html("Pensioonini aega jäänud: ");
+            $("#pensionResult").append(document.createTextNode(aastad));
+            $("#pensionResult").append(" aastad.");
+        }else if(aastad === 1){
+            $("#pensionResult").html("Pensioonini aega jäänud: ");
+            $("#pensionResult").append(document.createTextNode(aastad));
+            $("#pensionResult").append(" aasta.");
+        }else if (aastad<=0){
+            $("#pensionResult").html("Teie olete juba pensionäär! :)");
+        }
     }
 });
