@@ -26,3 +26,10 @@ body::after {
 form .error {
     color: #ff0000;
   }
+
+.contacts>*{
+    text-decoration: none;
+    color: lightgray;
+    margin: 0;
+    padding: 1%;
+}
