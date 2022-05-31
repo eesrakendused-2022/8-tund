@@ -32,6 +32,12 @@ body::after {
     gap: 1rem;
 }
 
+@media (max-width: 800px) {
+    .carousel {
+      flex-direction: column;
+    }
+}
+
 .carousel > ul {
     margin: 0;
     padding: 0;
@@ -52,9 +58,10 @@ body::after {
     width: 500px;
     height: 500px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     align-items: center;
-    border-radius: 25rem;
+    border-radius: 12rem;
+    
 }
 
 .slide[data-active] {
@@ -62,6 +69,11 @@ body::after {
     z-index: 1;
     transition-delay: 0ms;
     display:inline-block !important;
+}
+
+.slide > p {
+    font-size: 2.5em;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .carousel-button {
