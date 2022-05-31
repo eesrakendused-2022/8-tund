@@ -40,3 +40,10 @@ input.invalid, textarea.invalid{
 input.valid, textarea.valid{
 	border: 2px solid green;
 }
+
+.contacts>*{
+    text-decoration: none;
+    color: lightgray;
+    margin: 0;
+    padding: 1%;
+}
